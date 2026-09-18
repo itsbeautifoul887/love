@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#160b10">
+
+<title>Pentru tine ❤️</title>
+
+<style>
+:root{
+  --bg:#10080c;
+  --card:#1b0e14;
+  --card2:#24131b;
+  --pink:#f26a8d;
+  --pink2:#ff9db5;
+  --cream:#fff4f6;
+  --muted:#c9aeb7;
+  --line:rgba(255,255,255,.09);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+    radial-gradient(
+      circle at 20% 0%,
+      rgba(242,106,141,.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 25%,
+      rgba(255,157,181,.08),
+      transparent 28%
+    ),
+    var(--bg);
+
+  color:var(--cream);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+
+/* CONTAINER TELEFON */
+
+.page{
+  width:min(100%,430px);
+  margin:0 auto;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      180deg,
+      #10080c 0%,
+      #13090e 100%
+    );
+  min-height:100vh;
+}
+
+/* HERO */
+
+header{
+  position:relative;
+
+  min-height:100svh;
+
+  display:flex;
+  align-items:flex-end;
+
+  padding:28px 20px 38px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.88),
+      rgba(0,0,0,.15)
+    ),
+    url("poza1.jpg")
+    center/cover
+    no-repeat;
+}
+
+.hero-content{
+  width:100%;
+  text-align:center;
+}
+
+.eyebrow{
+  display:inline-block;
+
+  padding:7px 13px;
+
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:99px;
+
+  background:rgba(0,0,0,.3);
+
+  backdrop-filter:blur(8px);
+
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+  margin-bottom:14px;
+}
+
+h1{
+  font-family:Georgia,serif;
+
+  font-size:43px;
+  line-height:1.08;
+
+  font-weight:400;
+}
+
+.hero-text{
+  margin:15px auto 0;
+
+  color:#f6e7ea;
+
+  font-size:15px;
+
+  max-width:330px;
+}
+
+/* BUTON */
+
+.btn{
+  display:block;
+
+  width:100%;
+
+  margin-top:24px;
+
+  padding:15px 18px;
+
+  border-radius:18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink),
+      #d9436d
+    );
+
+  color:white;
+
+  text-decoration:none;
+
+  font-weight:700;
+
+  box-shadow:
+    0 12px 30px
+    rgba(242,106,141,.22);
+}
+
+/* SECTIUNI */
+
+section{
+  padding:54px 18px;
+}
+
+.section-label{
+  color:var(--pink2);
+
+  font-size:11px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  font-weight:700;
+
+  margin-bottom:7px;
+}
+
+.section-title{
+  font-family:Georgia,serif;
+
+  font-size:30px;
+
+  font-weight:400;
+
+  line-height:1.15;
+}
+
+.section-sub{
+  color:var(--muted);
+
+  font-size:14px;
+
+  margin-top:9px;
+}
+
+/* SCRISOARE */
+
+.letter{
+  margin-top:24px;
+
+  padding:25px 21px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.06),
+      rgba(255,255,255,.025)
+    );
+
+  border:1px solid var(--line);
+
+  border-radius:24px;
+}
+
+.letter p{
+  font-size:15px;
+  color:#ead9de;
+}
+
+.letter p+p{
+  margin-top:15px;
+}
+
+.signature{
+  margin-top:22px;
+
+  color:var(--pink2);
+
+  font-family:Georgia,serif;
+
+  font-size:20px;
+}
+
+/* POZE */
+
+.photos{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:14px;
+
+  margin-top:24px;
+}
+
+.photo-card{
+  position:relative;
+
+  overflow:hidden;
+
+  border-radius:22px;
+
+  border:1px solid var(--line);
+
+  background:#000;
+}
+
+.photo-card img{
+  display:block;
+
+  width:100%;
+
+  height:auto;
+
+  max-height:520px;
+
+  object-fit:cover;
+}
+
+.photo-caption{
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  padding:
+    35px
+    16px
+    14px;
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(0,0,0,.85)
+    );
+
+  font-family:Georgia,serif;
+
+  font-size:17px;
+}
+
+/* DETALII */
+
+.detail-list{
+  margin-top:24px;
+
+  display:grid;
+
+  gap:11px;
+}
+
+.detail{
+  display:flex;
+
+  align-items:center;
+
+  gap:14px;
+
+  padding:17px;
+
+  background:var(--card);
+
+  border:1px solid var(--line);
+
+  border-radius:19px;
+}
+
+.icon{
+  width:43px;
+  height:43px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:14px;
+
+  background:
+    rgba(242,106,141,.12);
+
+  font-size:21px;
+
+  flex:none;
+}
+
+.detail strong{
+  display:block;
+
+  font-size:14px;
+}
+
+.detail span{
+  display:block;
+
+  color:var(--muted);
+
+  font-size:13px;
+}
+
+/* MENIU */
+
+.menu{
+  margin-top:24px;
+
+  border:1px solid var(--line);
+
+  border-radius:23px;
+
+  overflow:hidden;
+}
+
+.menu-row{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:10px;
+
+  padding:18px;
+
+  background:var(--card);
+
+  border-bottom:1px solid var(--line);
+
+  font-size:14px;
+}
+
+.menu-row:last-child{
+  border-bottom:0;
+}
+
+.menu-row span:last-child{
+  color:var(--pink2);
+
+  text-align:right;
+}
+
+/* MESAJ */
+
+.quote{
+  margin-top:24px;
+
+  padding:28px 22px;
+
+  border-radius:24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #3a1724,
+      #1c0d14
+    );
+
+  border:
+    1px solid
+    rgba(242,106,141,.2);
+
+  text-align:center;
+}
+
+.quote .big-heart{
+  font-size:34px;
+}
+
+.quote p{
+  margin-top:13px;
+
+  font-family:Georgia,serif;
+
+  font-size:21px;
+
+  line-height:1.45;
+}
+
+/* RASPUNS */
+
+.answer{
+  text-align:center;
+
+  padding-bottom:60px;
+}
+
+.answer-box{
+  margin-top:24px;
+
+  padding:28px 18px;
+
+  background:var(--card);
+
+  border:1px solid var(--line);
+
+  border-radius:24px;
+}
+
+.answer-buttons{
+  display:grid;
+
+  gap:10px;
+
+  margin-top:20px;
+}
+
+button{
+  width:100%;
+
+  border:0;
+
+  border-radius:17px;
+
+  padding:15px;
+
+  font-size:15px;
+
+  font-weight:700;
+
+  cursor:pointer;
+}
+
+.yes{
+  background:var(--pink);
+
+  color:white;
+}
+
+.later{
+  background:#2a1820;
+
+  color:#f3dfe5;
+}
+
+#response{
+  min-height:28px;
+
+  margin-top:18px;
+
+  color:var(--pink2);
+
+  font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+  padding:
+    25px
+    18px
+    35px;
+
+  text-align:center;
+
+  color:#8e747d;
+
+  font-size:12px;
+
+  border-top:
+    1px solid
+    var(--line);
+}
+
+/* INIMIOARE */
+
+.heart{
+  position:fixed;
+
+  bottom:-30px;
+
+  z-index:99;
+
+  pointer-events:none;
+
+  animation:
+    up 4s linear forwards;
+}
+
+@keyframes up{
+
+  0%{
+    transform:
+      translateY(0)
+      scale(.8);
+
+    opacity:0;
+  }
+
+  15%{
+    opacity:1;
+  }
+
+  100%{
+    transform:
+      translateY(-110vh)
+      rotate(20deg);
+
+    opacity:0;
+  }
+
+}
+
+/* DESKTOP */
+
+@media(min-width:431px){
+
+  body{
+    background:#080507;
+  }
+
+  .page{
+    box-shadow:
+      0 0 70px
+      rgba(0,0,0,.6);
+  }
+
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+<!-- ================================= -->
+<!-- PAGINA PRINCIPALA -->
+<!-- ================================= -->
+
+<header id="start">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      Pentru iubita mea ❤️
+    </div>
+
+    <h1>
+      Am o întrebare
+      pentru tine...
+    </h1>
+
+    <p class="hero-text">
+      Ce-ai spune dacă am lăsa lumea
+      pentru câteva ore și am avea
+      o seară doar pentru noi?
+    </p>
+
+    <a
+      class="btn"
+      href="#invitatia"
+    >
+      Deschide invitația 💌
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- ================================= -->
+<!-- INVITATIA -->
+<!-- ================================= -->
+
+<section id="invitatia">
+
+  <div class="section-label">
+    01 · Invitația
+  </div>
+
+  <h2 class="section-title">
+    O seară numai pentru noi doi.
+  </h2>
+
+  <p class="section-sub">
+    Am pregătit ceva simplu,
+    dar din suflet.
+  </p>
+
+
+  <div class="letter">
+
+    <p>
+      Dragă iubita mea,
+    </p>
+
+    <p>
+      Vreau să te invit la o
+      cină romantică.
+      Nu pentru că trebuie să fie
+      o ocazie specială, ci pentru
+      că uneori cea mai frumoasă
+      ocazie este să fim împreună.
+    </p>
+
+    <p>
+      O masă bună, muzică,
+      lumini calde și noi doi.
+      Fără grabă. Fără telefoane.
+      Doar o seară pe care
+      să ne-o amintim cu drag.
+    </p>
+
+    <p>
+      Și sincer...
+      partea mea preferată
+      va fi să te am lângă mine. ❤️
+    </p>
+
+    <div class="signature">
+      Cu drag, al tău ❤️
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- POZELE VOASTRE -->
+<!-- ================================= -->
+
+<section id="povestea">
+
+  <div class="section-label">
+    02 · Noi
+  </div>
+
+  <h2 class="section-title">
+    Câteva momente care îmi plac.
+  </h2>
+
+  <p class="section-sub">
+    Pentru că fiecare fotografie
+    spune puțin din povestea noastră.
+  </p>
+
+
+  <div class="photos">
+
+
+    <!-- POZA 1 -->
+
+    <div class="photo-card">
+
+      <img
+        src="poza1.jpg.jpeg"
+        alt="Noi doi plimbându-ne"
+      >
+
+      <div class="photo-caption">
+        Oriunde, dacă suntem împreună. ❤️
+      </div>
+
+    </div>
+
+
+    <!-- POZA 2 -->
+
+    <div class="photo-card">
+
+      <img
+        src="poza2.jpg.jpeg"
+        alt="Noi doi la mare"
+      >
+
+      <div class="photo-caption">
+        Momente pe care vreau să le repet.
+      </div>
+
+    </div>
+
+
+    <!-- POZA 3 -->
+
+    <div class="photo-card">
+
+      <img
+        src="poza3.jpg.jpeg"
+        alt="Noi doi seara"
+      >
+
+      <div class="photo-caption">
+        Și încă multe amintiri de făcut...
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- DETALIILE SERII -->
+<!-- ================================= -->
+
+<section id="detalii">
+
+  <div class="section-label">
+    03 · Planul
+  </div>
+
+  <h2 class="section-title">
+    Seara noastră ✨
+  </h2>
+
+  <p class="section-sub">
+    Restul îl descoperim împreună.
+  </p>
+
+
+  <div class="detail-list">
+
+
+    <div class="detail">
+
+      <div class="icon">
+        📅
+      </div>
+
+      <div>
+
+        <strong>
+          Data
+        </strong>
+
+        <span>
+          20 Septembrie
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail">
+
+      <div class="icon">
+        🕰️
+      </div>
+
+      <div>
+
+        <strong>
+          Ora
+        </strong>
+
+        <span>
+          19:30
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail">
+
+      <div class="icon">
+        📍
+      </div>
+
+      <div>
+
+        <strong>
+          Locul
+        </strong>
+
+        <span>
+          O surpriză pentru tine
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail">
+
+      <div class="icon">
+        👗
+      </div>
+
+      <div>
+
+        <strong>
+          Dress code
+        </strong>
+
+        <span>
+          Frumoasă, ca întotdeauna ❤️
+        </span>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- CINA -->
+<!-- ================================= -->
+
+<section id="cina">
+
+  <div class="section-label">
+    04 · Cina
+  </div>
+
+  <h2 class="section-title">
+    Meniul nostru.
+  </h2>
+
+  <p class="section-sub">
+    Fără prea multe reguli.
+    Alegem ce ne place.
+  </p>
+
+
+  <div class="menu">
+
+
+    <div class="menu-row">
+
+      <span>
+        🥂 Început
+      </span>
+
+      <span>
+        Un toast pentru noi
+      </span>
+
+    </div>
+
+
+    <div class="menu-row">
+
+      <span>
+        🍝 Fel principal
+      </span>
+
+      <span>
+        Preferatul tău
+      </span>
+
+    </div>
+
+
+    <div class="menu-row">
+
+      <span>
+        🍰 Desert
+      </span>
+
+      <span>
+        Ceva dulce
+      </span>
+
+    </div>
+
+
+    <div class="menu-row">
+
+      <span>
+        🌙 Final
+      </span>
+
+      <span>
+        O plimbare în doi
+      </span>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- MESAJ -->
+<!-- ================================= -->
+
+<section>
+
+  <div class="quote">
+
+    <div class="big-heart">
+      ❤️
+    </div>
+
+    <p>
+      „Nu am nevoie de o seară
+      perfectă. Am nevoie doar
+      de tine în ea.”
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- RASPUNS -->
+<!-- ================================= -->
+
+<section
+  class="answer"
+  id="raspuns"
+>
+
+  <div class="section-label">
+    05 · Răspunsul tău
+  </div>
+
+  <h2 class="section-title">
+    Vii la cină cu mine?
+  </h2>
+
+  <p class="section-sub">
+    Promit să fac seara să merite. ❤️
+  </p>
+
+
+  <div class="answer-box">
+
+    <div class="answer-buttons">
+
+
+      <button
+        class="yes"
+        onclick="yesAnswer()"
+      >
+        DA, vin cu tine ❤️
+      </button>
+
+
+      <button
+        class="later"
+        onclick="laterAnswer()"
+      >
+        Mai vedem 😏
+      </button>
+
+
+    </div>
+
+
+    <div id="response"></div>
+
+  </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- FOOTER -->
+<!-- ================================= -->
+
+<footer>
+
+  Făcut cu ❤️
+  pentru persoana mea preferată.
+
+  <br><br>
+
+  O cină · o seară · noi doi
+
+</footer>
+
+
+</div>
+
+
+<script>
+
+/* INIMIOARE */
+
+function makeHeart(){
+
+  const h =
+    document.createElement("div");
+
+  h.className="heart";
+
+  h.textContent =
+    Math.random() > .45
+    ? "❤️"
+    : "💗";
+
+  h.style.left =
+    Math.random()*100+"vw";
+
+  h.style.fontSize =
+    (14+Math.random()*18)+"px";
+
+  h.style.animationDuration =
+    (3+Math.random()*3)+"s";
+
+  document.body.appendChild(h);
+
+  setTimeout(
+    () => h.remove(),
+    6500
+  );
+}
+
+
+/* BUTON DA */
+
+function yesAnswer(){
+
+  document.getElementById(
+    "response"
+  ).textContent =
+    "Știam eu! ❤️ Abia aștept să te văd.";
+
+  for(
+    let i=0;
+    i<24;
+    i++
+  ){
+
+    setTimeout(
+      makeHeart,
+      i*80
+    );
+
+  }
+
+}
+
+
+/* BUTON MAI VEDEM */
+
+function laterAnswer(){
+
+  document.getElementById(
+    "response"
+  ).textContent =
+    "Atunci o să trebuiască să te conving și mai mult... 😏❤️";
+
+}
+
+
+/* INIMIOARE AUTOMATE */
+
+setInterval(
+  makeHeart,
+  2200
+);
+
+</script>
+
+</body>
+</html>
+```
+
+
+
